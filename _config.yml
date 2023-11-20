@@ -2,10 +2,10 @@
 title: 佐木了的个人博客
 description: 正在学习：vulkan
 url: https://zerobut1.github.io
-avatar: /avatar.jpg
+# avatar: /avatar.jpg
 paginate: 5
 permalink: pretty
-cover_image: /bg.jpg
+cover_image: /bg.png
 
 # Gems
 plugins:
