@@ -5,5 +5,5 @@
 #   title: 分类
 #   url: /categories/
 - type: tags
-  title: 标签
+  title: tags
   url: /tags/
