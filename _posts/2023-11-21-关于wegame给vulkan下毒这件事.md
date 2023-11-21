@@ -4,28 +4,24 @@ title: 关于wegame给vulkan下毒这件事
 tags: 
 - vulkan
 date: 2023-11-21 09:31 +0800
-# last_modified_at: 2020-10-01 01:08:25 +0800
+last_modified_at: 2023-11-21 09:44 +0800
 ---
 由wegame导致的vulkan程序出现的一系列问题及解决方案
 
 ## 症状
 
 1. vulkan程序在编译时，会在目的文件夹出现文件
-
     {% highlight text %}
     项目名.年月日-时分秒-毫秒.log
     {% endhighlight %}
-
     无法使用文本编辑器正常打开
 
 2. vulkan程序在运行时，若使用1.1以上版本的API，会输出warning信息：
-
     {% highlight text %}
     Layer VK_LAYER_TENCENT_wegame_cross_overlay uses API version 1.1 which is older than the application specified API version of 1.3. May cause issues.
     {% endhighlight %}
 
 3. vulkan程序在运行时，会加载wegame的layer library,路径为
-
     {% highlight text %}
     WeGame\apps\Cross\Core\Stable\.\CrossVulkanLayer64.dll
     {% endhighlight %}
